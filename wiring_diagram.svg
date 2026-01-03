@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450">
+  <!-- 背景 -->
+  <rect width="600" height="450" fill="#f8f9fa"/>
+  
+  <!-- Arduino 板子 -->
+  <rect x="50" y="100" width="200" height="300" fill="#0066aa" stroke="#004488" stroke-width="2" rx="5"/>
+  <text x="150" y="130" text-anchor="middle" fill="white" font-size="18" font-weight="bold">Arduino Uno</text>
+  
+  <!-- Pin 8 接點 -->
+  <circle cx="250" cy="180" r="8" fill="#ffd700" stroke="#000" stroke-width="2"/>
+  <text x="270" y="185" fill="#000" font-size="14" font-weight="bold">Pin 8</text>
+  
+  <!-- 5V 接點 -->
+  <circle cx="250" cy="240" r="8" fill="#ff0000" stroke="#000" stroke-width="2"/>
+  <text x="270" y="245" fill="#000" font-size="14" font-weight="bold">5V</text>
+  
+  <!-- GND 接點 -->
+  <circle cx="250" cy="300" r="8" fill="#333" stroke="#000" stroke-width="2"/>
+  <text x="270" y="305" fill="#000" font-size="14" font-weight="bold">GND</text>
+  
+  <!-- 蜂鳴器模組 -->
+  <rect x="400" y="180" width="120" height="140" fill="#228b22" stroke="#000" stroke-width="3" rx="5"/>
+  <text x="460" y="210" text-anchor="middle" fill="white" font-size="14" font-weight="bold">蜂鳴器模組</text>
+  
+  <!-- 蜂鳴器圓形 -->
+  <circle cx="460" cy="260" r="30" fill="#222" stroke="#000" stroke-width="2"/>
+  <circle cx="460" cy="260" r="20" fill="#444"/>
+  
+  <!-- 三個接腳 -->
+  <rect x="420" y="160" width="20" height="20" fill="#ffd700" stroke="#000" stroke-width="2"/>
+  <text x="445" y="175" font-size="12" font-weight="bold">S</text>
+  
+  <rect x="450" y="160" width="20" height="20" fill="#ff0000" stroke="#000" stroke-width="2"/>
+  <text x="475" y="175" font-size="12" font-weight="bold">V</text>
+  
+  <rect x="480" y="160" width="20" height="20" fill="#333" stroke="#000" stroke-width="2"/>
+  <text x="505" y="175" font-size="12" font-weight="bold" fill="white">G</text>
+  
+  <!-- 連接線：Pin 8 到 S -->
+  <path d="M 250 180 L 300 180 L 400 180 L 430 180 L 430 170" 
+        stroke="#ffd700" stroke-width="3" fill="none" 
+        marker-end="url(#arrowyellow)"/>
+  <text x="310" y="175" font-size="11" fill="#666">訊號線</text>
+  
+  <!-- 連接線：5V 到 V -->
+  <path d="M 250 240 L 300 240 L 400 240 L 460 240 L 460 180" 
+        stroke="#ff0000" stroke-width="3" fill="none"
+        marker-end="url(#arrowred)"/>
+  <text x="310" y="235" font-size="11" fill="#666">電源線</text>
+  
+  <!-- 連接線：GND 到 G -->
+  <path d="M 250 300 L 300 300 L 400 300 L 490 300 L 490 180" 
+        stroke="#000" stroke-width="3" fill="none"
+        marker-end="url(#arrowblack)"/>
+  <text x="310" y="295" font-size="11" fill="#666">接地線</text>
+  
+  <!-- 箭頭定義 -->
+  <defs>
+    <marker id="arrowyellow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <circle cx="5" cy="5" r="4" fill="#ffd700"/>
+    </marker>
+    <marker id="arrowred" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <circle cx="5" cy="5" r="4" fill="#ff0000"/>
+    </marker>
+    <marker id="arrowblack" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <circle cx="5" cy="5" r="4" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- 標題 -->
+  <text x="300" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">
+    三線蜂鳴器模組接線圖
+  </text>
+  
+  <!-- 說明文字框 -->
+  <rect x="50" y="410" width="500" height="30" fill="#fff" stroke="#ccc" stroke-width="1" rx="3"/>
+  <text x="60" y="425" font-size="12" fill="#333" font-weight="bold">接線說明：</text>
+  <text x="130" y="425" font-size="12" fill="#666">
+    S（訊號）→ Pin 8  |  V（電源）→ 5V  |  G（接地）→ GND
+  </text>
+  
+  <!-- 圖例 -->
+  <text x="50" y="75" font-size="11" fill="#666">※ 三條線都要接，順序由左到右：S - V - G</text>
+</svg>

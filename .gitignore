@@ -1,0 +1,25 @@
+# Arduino 編譯產生的檔案
+*.hex
+*.elf
+*.eep
+*.lss
+*.map
+*.sym
+*.o
+*.d
+build/
+
+# macOS 系統檔案
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE 設定檔
+.vscode/
+.idea/
+
+# 暫存檔
+*~
+*.swp
+*.swo
+
