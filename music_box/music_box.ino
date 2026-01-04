@@ -105,47 +105,47 @@ void loop() {
 
 // 播放第一首音樂的函式：Do Re Mi Fa So So So, So Fa Mi Re Do Do Do
 void playMusic1() {
-  // 第一句：Do Re Mi Fa So So So（顏色漸變）
+  // 第一句：Do Re Mi Fa So So So（暖色調，強烈對比）
   setLedColor(255, 0, 0);     // 紅色
   playNote(NOTE_C);  // Do
   
-  setLedColor(255, 100, 0);   // 橘色
+  setLedColor(255, 200, 0);   // 黃色
   playNote(NOTE_D);  // Re
   
-  setLedColor(255, 255, 0);   // 黃色
+  setLedColor(255, 50, 0);    // 橘色
   playNote(NOTE_E);  // Mi
   
-  setLedColor(0, 255, 0);     // 綠色
+  setLedColor(255, 255, 0);   // 亮黃色
   playNote(NOTE_F);  // Fa
   
-  setLedColor(0, 255, 255);   // 青色
+  setLedColor(255, 0, 100);   // 粉紅色
   playNote(NOTE_G);  // So
   
-  setLedColor(0, 100, 255);   // 藍色
+  setLedColor(255, 150, 0);   // 橘黃色
   playNote(NOTE_G);  // So
   
-  setLedColor(150, 0, 255);   // 紫色
+  setLedColor(255, 0, 0);     // 紅色
   playNote(NOTE_G);  // So
   
   delay(200);  // 兩句之間的停頓
   
-  // 第二句：So Fa Mi Re Do Do Do（反向漸變）
-  setLedColor(150, 0, 255);   // 紫色
+  // 第二句：So Fa Mi Re Do Do Do（暖色調，強烈對比）
+  setLedColor(255, 255, 0);   // 黃色
   playNote(NOTE_G);  // So
   
-  setLedColor(0, 100, 255);   // 藍色
+  setLedColor(255, 0, 50);    // 深紅色
   playNote(NOTE_F);  // Fa
   
-  setLedColor(0, 255, 255);   // 青色
+  setLedColor(255, 150, 0);   // 橘色
   playNote(NOTE_E);  // Mi
   
-  setLedColor(0, 255, 0);     // 綠色
+  setLedColor(255, 50, 100);  // 粉紅色
   playNote(NOTE_D);  // Re
   
-  setLedColor(255, 255, 0);   // 黃色
+  setLedColor(255, 0, 0);     // 紅色
   playNote(NOTE_C);  // Do
   
-  setLedColor(255, 100, 0);   // 橘色
+  setLedColor(255, 200, 0);   // 黃色
   playNote(NOTE_C);  // Do
   
   setLedColor(255, 0, 0);     // 紅色
@@ -156,35 +156,35 @@ void playMusic1() {
 
 // 播放第二首音樂的函式：Sol Mi Sol Mi, Do Re Mi Sol Mi
 void playMusic2() {
-  // 第一句：Sol Mi Sol Mi（顏色變化）
+  // 第一句：Sol Mi Sol Mi（冷色調，強烈對比）
   setLedColor(0, 255, 0);     // 綠色
   playNote(NOTE_G);  // Sol
   
-  setLedColor(0, 255, 255);   // 青色
+  setLedColor(0, 50, 255);    // 藍色
   playNote(NOTE_E);  // Mi
   
-  setLedColor(0, 255, 0);     // 綠色
+  setLedColor(0, 255, 150);   // 青綠色
   playNote(NOTE_G);  // Sol
   
-  setLedColor(0, 255, 255);   // 青色
+  setLedColor(100, 0, 255);   // 紫色
   playNote(NOTE_E);  // Mi
   
   delay(200);  // 兩句之間的停頓
   
-  // 第二句：Do Re Mi Sol Mi（顏色漸變）
-  setLedColor(255, 0, 0);     // 紅色
+  // 第二句：Do Re Mi Sol Mi（冷色調，強烈對比）
+  setLedColor(0, 200, 255);   // 淺藍色
   playNote(NOTE_C);  // Do
   
-  setLedColor(255, 255, 0);   // 黃色
+  setLedColor(0, 255, 0);     // 綠色
   playNote(NOTE_D);  // Re
   
-  setLedColor(0, 255, 0);     // 綠色
+  setLedColor(50, 100, 255);  // 藍紫色
   playNote(NOTE_E);  // Mi
   
-  setLedColor(0, 255, 255);   // 青色
+  setLedColor(0, 255, 200);   // 青色
   playNote(NOTE_G);  // Sol
   
-  setLedColor(0, 100, 255);   // 藍色
+  setLedColor(0, 100, 255);   // 深藍色
   playNote(NOTE_E);  // Mi
   
   setLedColor(0, 0, 0);  // 關閉 LED
